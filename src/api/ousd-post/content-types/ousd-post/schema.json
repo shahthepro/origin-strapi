@@ -26,10 +26,10 @@
     "metaTitle": {
       "type": "string"
     },
-    "url": {
+    "slug": {
       "type": "uid",
       "required": true,
-      "regex": "/^[a-z0-9][a-z0-9-]*[a-z0-9]$/i",
+      "regex": "[a-z0-9][a-z0-9-]*[a-z0-9]",
       "targetField": "title"
     }
   }
