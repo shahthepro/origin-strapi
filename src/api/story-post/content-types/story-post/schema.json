@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "story_posts",
+  "info": {
+    "singularName": "story-post",
+    "pluralName": "story-posts",
+    "displayName": "Story.xyz Post"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "body": {
+      "type": "richtext",
+      "required": true
+    },
+    "metaDesc": {
+      "type": "string"
+    },
+    "metaTitle": {
+      "type": "string"
+    },
+    "url": {
+      "type": "uid",
+      "required": true,
+      "regex": "/^[a-z0-9][a-z0-9-]*[a-z0-9]$/i",
+      "targetField": "title"
+    }
+  }
+}

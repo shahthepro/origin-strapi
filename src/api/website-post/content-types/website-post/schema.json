@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "website_posts",
+  "info": {
+    "singularName": "website-post",
+    "pluralName": "website-posts",
+    "displayName": "Website Post"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "body": {
+      "type": "richtext",
+      "required": true
+    },
+    "metaDesc": {
+      "type": "string"
+    },
+    "metaTitle": {
+      "type": "string"
+    },
+    "url": {
+      "type": "uid",
+      "required": true,
+      "regex": "/^[a-z0-9][a-z0-9-]*[a-z0-9]$/i",
+      "targetField": "title"
+    }
+  }
+}
